@@ -1,6 +1,6 @@
 # Weather Report
 
-A basic weather report application to return the temperature of the entered city. This app demonstrates working of Nodejs and AJAX.
+A basic weather report application to return the current weather of the entered city. This app demonstrates working of Nodejs and AJAX.
 
 
 ## Demo
