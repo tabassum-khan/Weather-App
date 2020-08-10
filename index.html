@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="main.css" />
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+</head>
+<body>
+  <div class="app-wrap">
+
+    <header>
+      <form id="search">
+        <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+      </form>
+    </header>
+
+    <main>
+      <section class="location">
+        <div class="city">Northampton, GB</div>
+        <div class="date">Thursday 10 January 2020</div>
+      </section>
+
+      <div class="current">
+        <div class="temp">15<span>°c</span></div>
+        <div class="weather">
+          <div class="description">Haze</div>
+          <img class="icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+        </div>
+        <div class="hi-low">13°c / 16°c</div>
+      </div>
+    </main>
+
+  </div> <!-- end app-wrap-->
+
+  <script src="index.js"></script>
+
+</body>
+</html>
