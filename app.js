@@ -10,9 +10,8 @@ app.get("/", function(req, res){
     readStream.pipe(res);
 });
 
-app.get("/index.html", function(req, res){
-    const readStream = fs.createReadStream(__dirname + "/index.html");
-    readStream.pipe(res);
-})
 
-app.listen(process.env.PORT || 3000, () => console.log("Server started..."));
+var server = app.listen(process.env.PORT || 3000, function () {
+    var port = server.address().port;
+    console.log("Server is working on port " + port);
+});
