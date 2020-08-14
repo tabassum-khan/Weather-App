@@ -6,8 +6,12 @@ const app = express();
 app.use(express.static("./public"));
 
 app.get("/", function(req, res){
-    const readStream = fs.createReadStream(__dirname + "/index.html");
-    readStream.pipe(res);
+    res.sendFile(__dirname + "/index.html");
+});
+
+
+app.get("/favicon.ico", function(req, res){
+    res.send("<h1> Error: Directed to /favicon.ico route! </h1>");
 });
 
 
